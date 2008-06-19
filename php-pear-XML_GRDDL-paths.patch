@@ -1,0 +1,11 @@
+--- XML_GRDDL-0.1.0/usr/share/pear/XML/GRDDL.php~	2008-06-19 23:13:59.835654025 +0200
++++ XML_GRDDL-0.1.0/usr/share/pear/XML/GRDDL.php	2008-06-19 23:15:10.388771846 +0200
+@@ -45,7 +45,7 @@
+  * @link      http://code.google.com/p/xmlgrddl/
+  */
+ 
+-require_once 'GRDDL/Exception.php';
++require_once 'XML/GRDDL/Exception.php';
+ 
+ /**
+  * A driver for PHP 5's XSL extension.
