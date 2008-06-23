@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - A PHP library for dealing with GRDDL
 Summary(pl.UTF-8):	%{_pearname} - biblioteka PHP do obsługi GRDDL
 Name:		php-pear-%{_pearname}
-Version:	0.1.0
+Version:	0.1.1
 Release:	1
 License:	BSD Style
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	bf21eef1de694f7f945d18fdfbb7ed8c
+# Source0-md5:	8f7a10bb71f4b1244c6a47e2b786a551
 Patch0:		%{name}-paths.patch
 URL:		http://pear.php.net/package/XML_GRDDL/
 BuildRequires:	php-pear-PEAR
@@ -63,7 +63,6 @@ Testy dla PEAR::%{_pearname}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
-mv -f $RPM_BUILD_ROOT%{php_pear_dir}/{PEAR,}/XML/GRDDL/Exception.php
 
 %clean
 rm -rf $RPM_BUILD_ROOT
