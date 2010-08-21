@@ -1,20 +1,18 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		XML
-%define		_subclass	GRDDL
 %define		_status		alpha
 %define		_pearname	XML_GRDDL
 Summary:	%{_pearname} - A PHP library for dealing with GRDDL
 Summary(pl.UTF-8):	%{_pearname} - biblioteka PHP do obsługi GRDDL
 Name:		php-pear-%{_pearname}
 Version:	0.1.1
-Release:	1
+Release:	2
 License:	BSD Style
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	8f7a10bb71f4b1244c6a47e2b786a551
 Patch0:		%{name}-paths.patch
 URL:		http://pear.php.net/package/XML_GRDDL/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-HTTP_Request >= 1.4.2
@@ -22,6 +20,8 @@ Requires:	php-pear-Log
 Requires:	php-pear-Net_URL
 Requires:	php-pear-PEAR-core >= 1.4.0
 Requires:	php-pear-Validate
+Requires:	php-tidy
+Requires:	php-xsl
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,9 +45,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
