@@ -14,6 +14,7 @@ Patch0:		%{name}-paths.patch
 URL:		http://pear.php.net/package/XML_GRDDL/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Requires:	php-pear-HTTP_Request >= 1.4.2
 Requires:	php-pear-Log
