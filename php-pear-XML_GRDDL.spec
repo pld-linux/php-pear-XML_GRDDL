@@ -5,7 +5,7 @@ Summary:	%{_pearname} - A PHP library for dealing with GRDDL
 Summary(pl.UTF-8):	%{_pearname} - biblioteka PHP do obsługi GRDDL
 Name:		php-pear-%{_pearname}
 Version:	0.1.2
-Release:	1
+Release:	2
 License:	BSD Style
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
