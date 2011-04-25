@@ -1,24 +1,24 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		alpha
 %define		_pearname	XML_GRDDL
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - A PHP library for dealing with GRDDL
 Summary(pl.UTF-8):	%{_pearname} - biblioteka PHP do obsługi GRDDL
 Name:		php-pear-%{_pearname}
-Version:	0.1.2
-Release:	2
+Version:	0.2.0
+Release:	1
 License:	BSD Style
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	62282f02e0dfac3d4862c63259695c84
+# Source0-md5:	5a05730a0c21110c5f707d2ef73d7903
 Patch0:		%{name}-paths.patch
 URL:		http://pear.php.net/package/XML_GRDDL/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
-Requires:	php-pear-HTTP_Request >= 1.4.2
+Requires:	php-pear-HTTP_Request2
 Requires:	php-pear-Log
-Requires:	php-pear-Net_URL
+Requires:	php-pear-Net_URL2
 Requires:	php-pear-PEAR-core >= 1.4.0
 Requires:	php-pear-Validate
 Requires:	php-tidy
