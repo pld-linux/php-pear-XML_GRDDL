@@ -1,6 +1,5 @@
 %define		_status		alpha
 %define		_pearname	XML_GRDDL
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - A PHP library for dealing with GRDDL
 Summary(pl.UTF-8):	%{_pearname} - biblioteka PHP do obsługi GRDDL
 Name:		php-pear-%{_pearname}
